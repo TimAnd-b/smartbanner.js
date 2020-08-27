@@ -219,7 +219,7 @@ function handleExitClick(event, self) {
   $('.b-header-mobile-new__top').removeClass('smartbanner');
   $('.b-issue-content__sort').removeClass('smartbanner-sort');
   $('.b-header-mobile-new__top').removeClass('smartbanner-filter');
-  $('.b-search-list').removeClass('smartbanner-list');
+  $('.b-header-new .b-search-list').removeClass('smartbanner-list');
   $('.b-mobile-menu').removeClass('smartbanner-menu');
   $('.b-mobile-navigation-new').removeClass('smartbanner-navigation');
   self.exit();
@@ -423,7 +423,7 @@ var SmartBanner = /*#__PURE__*/function () {
       $('.b-header-mobile-new__top').addClass('smartbanner');
       $('.b-issue-content__sort').addClass('smartbanner-sort');
       $('.b-filter-new').addClass('smartbanner-filter');
-      $('.b-search-list').addClass('smartbanner-list');
+      $('.b-header-new .b-search-list').addClass('smartbanner-list');
       $('.b-mobile-menu').addClass('smartbanner-menu');
       $('.b-mobile-navigation-new').addClass('smartbanner-navigation');
       return "<div class=\"smartbanner smartbanner--".concat(modifier, " js_smartbanner\">\n      <a href=\"javascript:void();\" class=\"smartbanner__exit js_smartbanner__exit\" aria-label=\"").concat(this.closeLabel, "\"></a>\n      <div class=\"smartbanner__icon\" style=\"background-image: url(").concat(this.icon, ");\"></div>\n      <div class=\"smartbanner__info\">\n        <div>\n          <div class=\"smartbanner__info__title\">").concat(this.options.title, "</div>\n          <div class=\"smartbanner__info__author\">").concat(this.options.author, "</div>\n          <div class=\"smartbanner__info__price\">").concat(this.options.price).concat(this.priceSuffix, "</div>\n        </div>\n      </div>\n      <a href=\"").concat(this.buttonUrl, "\" target=\"_blank\" class=\"smartbanner__button js_smartbanner__button\" rel=\"noopener\" aria-label=\"").concat(this.options.button, "\"><span class=\"smartbanner__button__label\">").concat(this.options.button, "</span></a>\n    </div>");

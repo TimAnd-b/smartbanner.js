@@ -14,7 +14,7 @@ function handleExitClick(event, self) {
   $('.b-header-mobile-new__top').removeClass('smartbanner');
   $('.b-issue-content__sort').removeClass('smartbanner-sort');
   $('.b-header-mobile-new__top').removeClass('smartbanner-filter');
-  $('.b-search-list').removeClass('smartbanner-list');
+  $('.b-header-new .b-search-list').removeClass('smartbanner-list');
   $('.b-mobile-menu').removeClass('smartbanner-menu');
   $('.b-mobile-navigation-new').removeClass('smartbanner-navigation');
 
@@ -142,7 +142,7 @@ export default class SmartBanner {
     $('.b-header-mobile-new__top').addClass('smartbanner');
     $('.b-issue-content__sort').addClass('smartbanner-sort');
     $('.b-filter-new').addClass('smartbanner-filter');
-    $('.b-search-list').addClass('smartbanner-list');
+    $('.b-header-new .b-search-list').addClass('smartbanner-list');
     $('.b-mobile-menu').addClass('smartbanner-menu');
     $('.b-mobile-navigation-new').addClass('smartbanner-navigation');
     return `<div class="smartbanner smartbanner--${modifier} js_smartbanner">
